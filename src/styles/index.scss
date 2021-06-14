@@ -11,3 +11,126 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+
+.box{
+   background: goldenrod;
+   width: 135px;
+   height: 350px;
+   padding-left: 1%;
+   padding-top: 1%;
+   border-radius: 100px;
+   margin: auto;
+   margin-top: -1%;
+
+}
+
+
+
+.red{
+    background: red;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    
+    
+   
+}
+.yellow{
+    background: yellow;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-top: 5%;
+   
+}
+.green{
+    background: green;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-top: 5%;
+   
+}
+
+.red::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+   opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.red:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+}
+
+.red:hover::after {
+    opacity: 1;
+}
+
+.yellow::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+   opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.yellow:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+}
+
+.yellow:hover::after {
+    opacity: 1;
+}
+.green::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+   opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.green:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+}
+
+.green:hover::after {
+    opacity: 1;
+}
+
+.glow{
+    box-shadow: 0px 0px 19px 4px #FFFFFF;
+}
+
+.subBox{
+    width: 20px;
+    height: 100px;
+    background: goldenrod;
+    margin: auto;
+    margin-top: 5px;
+    
+}
+
